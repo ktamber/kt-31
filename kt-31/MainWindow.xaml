@@ -13,13 +13,13 @@
                     <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\Ktamada\Downloads\pngwing.com.png" Height="25"></Image>
                 </MenuItem.Icon>
                 <MenuItem Header="Открыть">
-                <MenuItem Header="Файл1" Click="MenuItem_Click_1"></MenuItem>
-                <MenuItem Header="Файл2" Click="MenuItem_Click_2"></MenuItem>
-                <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
+                    <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
                 </MenuItem>
             </MenuItem>
 
         </Menu>
-        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="236" Margin="164,103,-186,-123" VerticalAlignment="Top" Width="368"/>
+        <Button Content="Добавить ау" HorizontalAlignment="Left" Height="42" Margin="299,345,-120,-171" VerticalAlignment="Top" Width="167" Click="Button_Click"/>
+        <TextBox x:Name="MyTextBox" HorizontalAlignment="Left" Height="148" Margin="233,94,-178,-26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="291"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
     </Grid>
 </Window>
