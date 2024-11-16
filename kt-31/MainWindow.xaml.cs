@@ -46,14 +46,6 @@ namespace kt_31
             
         }
         */
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MyTextBox.Text += "Прииивввееет";
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
     }
 }
