@@ -9,11 +9,10 @@
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Background" Value="Azure"/>
+            <Setter Property="Background" Value="FloralWhite"/>
         </Style>
-
     </Window.Resources>
-    <Grid Background="Pink">
+    <Grid Background="#E1C994">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height = "auto"/>
@@ -34,24 +33,24 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
-                    <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0"/>
-                <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1"/>
-                <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2"/>
-                <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="0"/>
-                <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1"/>
-                <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="2"/>
-                <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0"/>
-                <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1"/>
-                <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2"/>
-                <Button Name="btn0" Content="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
-                <Button Name="btnDel" Content="/" Grid.Row="0" Grid.Column="1"/>
-                <Button Name="btnMut" Content="*" Grid.Row="0" Grid.Column="2"/>
-                <Button Name="btnMinus" Content="-" Grid.Row="0" Grid.Column="3"/>
-                <Button Name="btnPlus" Content="+" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3"/>
-                <Button Name="btnEnter" Content="Enter" Grid.Row="3" Grid.RowSpan="4" Grid.Column="3"/>
-                <Button Name="btnTochka" Content="." Grid.Row="5" Grid.Column="2"/>
-                <Button Name="btnAC" Content="AC" Grid.Row="0" Grid.Column="0"/>
+
+                <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" Click="NumberButton_Click"/>
+                <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" Click="NumberButton_Click"/>
+                <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="0" Click="NumberButton_Click"/>
+                <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1" Click="NumberButton_Click"/>
+                <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0" Click="NumberButton_Click"/>
+                <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1" Click="NumberButton_Click"/>
+                <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btn0" Content="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Click="NumberButton_Click"/>
+                <Button Name="btnDel" Content="/" Grid.Row="0" Grid.Column="1" Click="OperationButton_Click"/>
+                <Button Name="btnMut" Content="*" Grid.Row="0" Grid.Column="2" Click="OperationButton_Click"/>
+                <Button Name="btnMinus" Content="-" Grid.Row="0" Grid.Column="3" Click="OperationButton_Click"/>
+                <Button Name="btnPlus" Content="+" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" Click="OperationButton_Click"/>
+                <Button Name="btnEnter" Content="Enter" Grid.Row="3" Grid.RowSpan="4" Grid.Column="3" Click="EqualsButton_Click" />
+                <Button Name="btnTochka" Content="." Grid.Row="5" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btnAC" Content="AC" Grid.Row="0" Grid.Column="0" Click="ClearButton_Click"/>
                 
             </Grid>
         </Grid>
